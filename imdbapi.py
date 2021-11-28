@@ -3,8 +3,10 @@ import json
 import ssl
 import sys
 
-url = "https://imdb-api.com/en/API/SearchMovie/k_42T33x42/"
-url2 = "https://imdb-api.com/en/API/Title/k_42T33x42/"
+api_key = input("Enter the api key here: ")
+
+url = "https://imdb-api.com/en/API/SearchMovie/+api_key+"/"
+url2 = "https://imdb-api.com/en/API/Title/+api_key+"/"
 det = "/Trailer,Ratings,"
 
 ctx = ssl.create_default_context()
